@@ -1,0 +1,145 @@
+{
+	"properties": [
+		{
+			"id": "prop1",
+			"type": "House",
+			"bedrooms": 3,
+			"price": 650000,
+			"tenure": "Freehold",
+			"description": "Attractive three bedroom semi-detached family home situated within 0.5 miles of Petts Wood station with fast trains to London and within easy" 
+			"walking distance of local shops, schools, bus routes and National Trust woodland. The property comprises; two receptions, fitted 18'9 x 10'1 kitchen/breakfast" 
+			"room and conservatory. The property also benefits from having a utility room and cloakroom. To the first floor there are three bedrooms and a family bathroom with" 
+			"separate WC. Additional features include double glazing, gas central heating and a well presented interior...",
+			"location": "Petts Wood Road, Petts Wood, Orpington",
+			"picture": "images/prop1pic1small.jpg",
+			"url": "properties/prop1.html",
+			"added": {
+				"month": "March",
+				"day": 12,
+				"year": 2018
+			}
+		},
+		{
+			"id": "prop2",
+			"type": "Flat",
+			"bedrooms": 2,
+			"price": 299995,
+			"tenure": "Freehold",
+			"description": "Presented in excellent decorative order throughout is this two double bedroom, two bathroom, garden flat.The modern fitted kitchen is open plan to the"
+			"living room which boasts solid wooden floors and includes integrated appliances including a dishwasher & a washing machine. This large open plan benefits from bi" 
+			"folding doors onto a secluded private courtyard garden. Both bedrooms are double sized, and the family bathroom boasts a matching three piece suite a shower attachment" 
+			"over the bath. There is also a separate wet room. There are walnut doors throughout and wiring for Sky TV/aerial points in the living room/kitchen and both bedrooms."
+			"This apartment being only five years old, is still under a 10 year building guarantee...",
+			"location": "Crofton Road Orpington BR6",
+			"picture": "images/prop2pic1small.jpg",
+			"url": "properties/prop2.html",
+			"added": {
+				"month": "September",
+				"day": 14,
+				"year": 2018
+			}
+		},
+		{
+			"id": "prop3",
+			"type": "House",
+			"bedrooms": 5,
+			"price": 467545,
+			"tenure": "Freehold",
+			"description": "Superbly positioned on the edge of the Melbourne. Ground floor has entrance to a nice size hallway, 3 detached bathrooms, considerably large living and dining room featuring a large kitchen"
+			"also a bedroom with an En Suite wet room and garage attached Upper floor has a family bathroom and 5 bedrooms,3 are double rooms,1" 
+		    "is a single with en suite shower. Outside has a rear garden with a covered patio area. Plenty of off road parking as seen in photo of front" 
+			"of house. Equally just under two miles from the town centre of Bridgwater, and being within the catchment area for the highly favoured local schooling,"
+			"this impressive, detached family home lends itself perfectly to array of demands, whether it be for anyone in need of a generous annexe," 
+			"the ability to have a separate holiday let, or to run your own business from home.",
+			"location": "VIC. 490 St Kilda Road, Melbourne",
+			"picture": "images/prop3pic1small.jpg",
+			"url": "properties/prop3.html",
+			"added": {
+				"month": "December",
+				"day": 10,
+				"year": 2018
+			}
+		},
+		{
+			"id": "prop4",
+			"type": "Apartments",
+			"bedrooms": 4,
+			"price": 730555,
+			"tenure": "Freehold",
+			"description": "Featuring contemporary furnishings and artwork, the studios and 1- to 3-bedroom apartments include modern kitchens and living spaces, plus free Wi-Fi," 
+			"washing machines, iPod docks, and flat-screen TVs with satellite channels. Luxe, 4-bedroom penthouses with marble and wood interiors add Jacuzzis and balconies.The property" 
+			"features meeting space and a gym, and secured parking is available.",
+			"location": "130 Queen's Gate, Kensington, London",
+			"picture": "images/prop4pic1.jpg",
+			"url": "properties/prop4.html",
+			"added": {
+				"month": "June",
+				"day": 04,
+				"year": 2018
+			}
+		},
+		{
+			"id": "prop5",
+			"type": "Bunglow",
+			"bedrooms": 6,
+			"price": 557595,
+			"tenure": "Freehold",
+			"description": "This bunglow is equipped with an old-fashioned kitchen and one two bathrooms, it also has a fairly small living room, four bedrooms, a cozy dining area,"
+			"a sun room and a cozy garage.Potton designer Sean Adams produced a design that was very different to the one they’d originally imagined – a modern one and a half" 
+			"storey bungalow – but with just a few alterations it was exactly what they wanted. While Potton designed and built the closed panel timber frame, the couple picked a" 
+			"project mangager to handle the rest of the scheme. Despite some frustations with the quality of finish that some of the trades provided, the Setterfields feel that" 
+			"the home’s design couldn’t be more suited to them.We think that Sean did a great job creating something that worked for us and the planners – last weekend we had four" 
+			"couples come to stay and we didn’t feel cramped at all, yet the space also works really well when it’s just Mo and I,” says Graham.",
+			"location": "Letsby Avenue, Sheffield",
+			"picture": "images/prop5pic1.jpg",
+			"url": "properties/prop5.html",
+			"added": {
+				"month": "August",
+				"day": 15,
+				"year": 2018
+			}
+		},
+		{
+			"id": "prop6",
+			"type": "Flat",
+			"bedrooms": 3,
+			"price": 387595,
+			"tenure": "Freehold",
+			"description": "Stunning 3 bedroom, first floor apartment offering superior specification throughout. The open plan kitchen / living" 
+					"room features a large balcony. The master bedroom benefits from bespoke fitted wardrobe and en suite.Exceptional bedrooms"
+					"duplex flats (approx. 4,439 sq ft) at London’s premier address, with an expansive formal reception room overlooking Hyde Park and" 
+					"the Serpentine.This truly exceptional flat is located in the most sought after location is now available. The grand property boasts" 
+					"magnificent views of both Knightsbridge and Hyde Park. One Hyde Park is offering luxury London living at it's absolute finest.",
+			"location": "Wellington Court, Knightsbridge, London",
+			"picture": "images/prop6pic1.jpg",
+			"url": "properties/prop6.html",
+			"added": {
+				"month": "December",
+				"day": 10,
+				"year": 2018
+			}
+		},
+		{
+			"id": "prop7",
+			"type": "Apartment",
+			"bedrooms": 4,
+			"price": 387595,
+			"tenure": "Freehold",
+			"description": "Featuring an outdoor swimming pool and barbecue facilities, Deluxe 2 bedroom apartment offers accommodation in Mexico" 
+					"with free WiFi and city views. This apartment is 8 km from Beto Avila Stadium and 8 km from Cancun Government Palace."
+					"The apartment has a balcony, 4 bedrooms, a living room and a well-equipped kitchen with an oven and a microwave." 
+					"The apartment also comes with a seating area and 2 bathrooms.The apartment offers a terrace. Guests can relax in the garden at the property."
+					"Diego Bus Station is 9 km from Deluxe 2 bedroom apartment, while Coco Bongo is 18 km from the property." 
+					"Diego International Airport is 13 km away. This apartment is also rated for the best value in San Diego! Guests are getting more for their" 
+				     "money when compared to other properties in this city.",
+			"location": "Avenida Del Mexico, San Diego",
+			"picture": "images/prop7pic1.jpg",
+			"url": "properties/prop7.html",
+			"added": {
+				"month": "February",
+				"day": 07,
+				"year": 2018
+			}
+		}
+	]
+}

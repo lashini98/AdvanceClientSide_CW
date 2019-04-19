@@ -1,0 +1,144 @@
+
+/*styling for all bodies*/
+body {
+    font-family: Josefin Sans, cursive;
+    margin: 0;
+}
+
+#grad {
+  background-image: linear-gradient(-90deg, #f7f8f8, #acbb78);
+}
+
+
+/*styling for header 1*/
+h1 {
+    text-shadow: 2px 2px 3px #000000;
+    font-weight: normal;
+    font-size: 30px;
+}
+
+/*styling for the logo legend estate*/
+#logo {
+    width: 16%;
+}
+
+/*styling for nav bar*/
+nav {
+    width: 100%;
+    background-color: black;
+    overflow: hidden;
+    position: fixed;
+	text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+    height: 7%;
+}
+
+/*styling for anchor tags in nav bar*/
+nav a {
+    text-decoration: none;
+	float: left;
+	font-family:Goudy Old Style;
+    display: block;
+    font-weight:bold;
+	color: #bab86c;
+    text-align: center;
+    padding: 17px 70px;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+nav a:hover {
+  background-color: white;
+  color: #0d0d0d;
+  text-decoration: none;
+}
+
+/*styling for footer*/
+footer {
+    color:#bab86c;
+	font-family:Perpetua;
+	font-size: 20px;
+    width: 100%;
+    background-color: black;
+    padding: 1%;
+    position: fixed;
+    bottom: 0%;
+    text-align: center;
+}
+
+
+input[type=submit] {
+    background-color: black;
+    color: white;
+    padding: 13px 19px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+	}
+
+/*styling for email link in footer*/
+#footerEmail, #footerContain, #footerSearch {
+    text-decoration: none;
+    color: #bab86c;
+    padding-right: 3%;
+}
+
+/*styling for the big image of each property*/
+#imgprop1 {
+	
+    float:left;
+    padding-right: 12%;
+    padding-left: 5%;
+	padding-top: 7%;
+}
+
+/*styling for information section with properties*/
+#secProperty1, #secProperty2, #secProperty3, #secProperty4, #secProperty5, #secProperty6, #secProperty7 {
+    margin: auto;
+    padding-top: 5%;
+}
+
+/*styling for the tab contents*/
+#tabs {
+    font-family: Josefin Sans, cursive;
+    padding: 3%;
+    text-align: justify;
+}
+
+/*styling for the ul image list*/
+#thumbnails {
+    white-space: nowrap;
+}
+
+/*styling for each li image*/
+#thumbnails li {
+    list-style-type: none;
+    display: inline;
+}
+
+/*styling for the tab 3 button*/
+#googleMap {
+    font-family: Josefin Sans, cursive;
+    text-align: justify;
+}
+
+/*styling for the map*/
+#map {
+    height: 400px;
+    width: 100%;
+}
+
+/*styling for the image list*/
+#tabs-2 img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+}
+
+/*styling for the search result links*/
+.drag a {
+    text-decoration: none;
+    color: #000000;
+}

@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Find a Property</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="scripts/JQueryProp.js"></script>
+    <script src="scripts/favourites.js"></script>
+    <script src="jquery-ui.js"></script>
+    <script src="scripts/data.js"></script>
+    <link href="jquery-ui.css" rel="stylesheet">
+    <link href="home-style.css" rel="stylesheet">
+    <link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/demo.css">
+    <link rel="stylesheet" href="assets/favourite-style.css">
+    <link rel="stylesheet" href="assets/navigation-round.css">
+    <link rel="stylesheet" href="assets/slicknav/slicknav.min.css">
+    <link rel="stylesheet" href="assets/search-form.css">
+    <link rel="stylesheet" href="assets/home-style.css">
+
+</head>
+
+<body>
+    
+    <div class="navigation-container">
+        <nav class="menu-navigation-round">
+            <a href="index.html">Home</a>
+            <a class="selected" href="favourites.html">Favourites</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact us</a>
+            <!-- <a href="#" class="selected">About</a> -->
+        </nav>
+    </div>
+    <div class="header">
+        <h1>My Website</h1>
+        <!-- <p>Resize the browser window to see the effect.</p> -->
+    </div>
+    <script src="assets/slicknav/jquery.slicknav.min.js"></script>
+
+    <!-- <script>
+
+        $(function () {
+
+            var menu = $('.menu-navigation-round');
+
+            menu.slicknav();
+
+            // Mark the clicked item as selected
+
+            menu.on('click', 'a', function () {
+                var a = $(this);
+
+                a.siblings().removeClass('selected');
+                a.addClass('selected');
+            });
+        });
+
+
+    </script> -->
+
+    <script>
+        
+        $(function () {
+            var favouriteList = JSON.parse(localStorage.getItem('favList'));
+            if (favouriteList != null) {
+                var output = "<ul>"
+                for (var i = 0; i < favouriteList.length; i++) {
+                    for (var j = 0; j < data.properties.length; j++) {
+                        if (favouriteList[i] == data.properties[j].id) {
+                            output += `<li>${data.properties[j].location}<span id="${favouriteList[i]}" class="close">&times;</span></li>`
+                        }
+                    }
+                }
+                output += "</ul>";
+                document.getElementById("listHolder").innerHTML = output;
+            } else {
+                var output = `<p>There is no properties in the favourite list</p>`
+                document.getElementById("listHolder").innerHTML = output;
+            }
+
+            var closeButtons = document.getElementsByClassName("close");
+            for (var i = 0; i < closeButtons.length; i++) {
+                closeButtons[i].addEventListener("click", function () {
+                    this.parentElement.style.display = 'none';
+                    for(var j=0; j<favouriteList.length; j++){
+                        if(favouriteList[j] == this.id){
+                            delete favouriteList[j];
+                            localStorage.setItem('favList',JSON.stringify(favouriteList));
+                            favouriteList[j] = [];
+                        }
+                    }
+                    
+                });
+            }
+            
+        });
+        
+    </script>
+    <h1>This is Favourites Page</h1>
+    <div id="listHolder" class="listContainer"></div>
+    <button id="clearAll">Clear All</button>
+
+</body>
+
+</html>

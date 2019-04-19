@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Property1</title>
+	
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../scripts/favourites.js"></script>
+    <script src="../jquery-ui.js"></script>
+	
+    <link rel="stylesheet" href="../jquery-ui.css">
+    <link rel="stylesheet" href="../assets/property-style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.css">
+	
+	<!--jquery-ui widgets-->
+    <!--google map-->
+    <script>
+            $(function () {
+                $("#googleMap").button().click(function () {
+                    var latlong = {lat: 51.390084, lng: 0.073915};
+                    var map = new google.maps.Map(document.getElementById('map'), {
+                        zoom: 10,
+                        center: latlong
+                    });
+                    var marker = new google.maps.Marker({
+                        position: latlong,
+                        map: map
+                    });
+                });
+            });
+        </script>
+    <title></title>
+</head>
+
+<body id="grad">
+    <header>
+	  <!--navigation bar-->
+		<nav class="menu-navigation-round">
+			<a href="index.html" class="selected">Home</a>
+			<a href="favourites.html">Favourites</a>
+			<a href="about.html">About Us</a>
+		</nav> 
+	</header>
+	
+	<!--property1 image-->
+     <img id="imgprop1" src="../images/prop1pic1.jpg" alt="image">
+
+    <!--section which contains the property short description-->
+    <section id="secProperty1">
+        <h1> House For Sale </h1>
+		
+
+        <b><p> Property Type : &nbsp; House </p>
+        <p> Price : &nbsp; £650,000</p>
+        <p> Location : &nbsp; Petts Wood Road, Petts Wood, Orpington </p></b>
+    </section>
+
+    <!--section which contains the image gallery-->
+    <section id="smallImages">
+        <!--image list-->
+        <ul id="thumbnails">
+            <li><a class="tgroup" rel="group" href="../images/prop1pic2.jpg"><img src="../images/prop1pic2small.jpg"
+                        alt="image"></a></li>
+            <li><a class="tgroup" rel="group" href="../images/prop1pic3.jpg"><img src="../images/prop1pic3small.jpg"
+                        alt="image"></a></li>
+            <li><a class="tgroup" rel="group" href="../images/prop1pic4.jpg"><img src="../images/prop1pic4small.jpg"
+                        alt="image"></a> <br></li>
+            <li><a class="tgroup" rel="group" href="../images/prop1pic5.jpg"><img src="../images/prop1pic5small.jpg"
+                        alt="image"></a></li>
+            <li><a class="tgroup" rel="group" href="../images/prop1pic6.jpg"><img src="../images/prop1pic6small.jpg"
+                        alt="image"></a></li>
+            
+        </ul>
+
+        <!--script for the image gallery-->
+        <script>
+            $(document).ready(function () {
+                $("a.tgroup").fancybox({
+                    'transitionIn': 'elastic',
+                    'transitionOut': 'elastic',
+                    'speedIn': 600,
+                    'speedOut': 200,
+                    'overlayShow': false
+                });
+
+            });
+        </script>
+    </section>
+	
+	<script>
+         $( "#tabs" ).tabs();
+    </script>
+
+    <!--section which contains the tabs with long descriptions-->
+    <section id="tabs">
+        <!--tab list-->
+        <ul>
+            <li><a href="#tabs-1">Long Description</a></li>
+            <li><a href="#tabs-2">Floor Plan</a></li>
+            <li id="googleMap"><a href="#tabs-3">Google Map</a></li>
+        </ul>	
+
+        <!--long description-->
+        <section id="tabs-1">
+            <p> Attractive three bedroom semi-detached family home situated within 0.5 miles of Petts Wood station with
+                fast trains to London and within easy walking distance of local shops, schools, bus routes and National
+                Trust woodland. The property comprises; two receptions, fitted 18'9 x 10'1 kitchen/breakfast room and
+                conservatory. The property also benefits from having a utility room and cloakroom. To the first floor
+                there are three bedrooms and a family bathroom with separate WC. Additional features include double glazing,
+                gas central heating and a well presented interior...</p>
+        </section>
+
+        <!--image gallery-->
+        <section id="tabs-2">
+            <img src="../images/prop1Plan.jpg">
+        </section>
+
+        <!--map location-->
+        <section id="tabs-3">
+            <section id="map"></section>
+            <!--adding the google map-->
+            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCkoPuF252Sl33JfAny3Yq6UvCXLwVECkA&callback=initMap">
+            </script>
+        </section>
+		
+    <input type="submit" value="Add to Favourites"><br/><br>
+     </section>
+   
+	
+	<!--footer-->
+	<footer>
+		Contact us at : <a id="footerEmail" href="#"> CarltonEstate@gmail.com </a>
+		<a id="footerSearch" href="index.html">Home</a>
+		<a id="footerContain"href="favourites.html">Favourites</a>
+		<a id="footerContain" href="about.html">About us</a>
+	</footer>
+
+</body>
+</html>          

@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Find a Property</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<link href="home-style.css" rel="stylesheet">
+	<script src="scripts/JQueryProp.js"></script>
+	<script src="jquery-ui.js"></script>
+	<!-- <script src="properties.json"></script> -->
+	<link href="jquery-ui.css" rel="stylesheet">
+	
+	<link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+
+	<link rel="stylesheet" href="assets/demo.css">
+	<link rel="stylesheet" href="assets/navigation-round.css">
+	<link rel="stylesheet" href="assets/slicknav/slicknav.min.css">
+	<link rel="stylesheet" href="assets/search-form.css">
+	<link rel="stylesheet" href="assets/home-style.css">
+	
+
+</head>
+
+<body>
+	<section class="navigation-container">
+		<nav class="menu-navigation-round">
+			<a href="index.html" class="selected">Home</a>
+			<a href="favourites.html">Favourites</a>
+			<a href="about.html">About Us</a>
+			<a href="contact.html">Contact us</a>
+
+		</nav>
+	</section>
+	<section class="header">
+		<h1>My Website</h1>
+
+	</section>
+
+	<script src="assets/slicknav/jquery.slicknav.min.js"></script>
+
+
+	<section class="form-container">
+		<section class="form-style-2">
+			<form>
+				<label for="field3"><span class="select-label">Property type:</span><select name="property" id="property" class="select-field">
+						<option value="House" selected>House</option>
+						<option value="Flat">Flat</option>
+						<option value="Apartment">Apartment</option>
+						<option value="Bangalow">Bangalow</option>
+					</select></label>
+
+				<label for="field4"><span>Max Bedrooms:</span><input id="spinner" value="3" type="text" name="field4" /></label>
+				<label for="field2"><span>Min Bedrooms:</span><input type="text" id="spinner1" value="3" name="field2" /></label>
+
+				<label for="field4"><span class="select-label">Time Added</span><select name="time" id="time" class="select-field">
+						<option value="January" , "February" , "March" , "April">January - April (2018)</option>
+						<option value="May" , "June" , "July" , "August">May - August (2018)</option>
+						<option value="September" , "October" , "November" , "December">September - December (2018)</option>
+						<option value="Anytime" selected>Anytime</option>
+					</select></label>
+
+				<label for="field1"><span>Price Range :</span><input type="text" id="amount" readonly class="goldsliderText input-field"
+					 name="field1" />
+					<section id="slider-range"></section>
+				</label>
+
+				<label style="text-align: center;"><span> </span><input type="button" id="Search" value="Search" /></label>
+			</form>
+		</section>
+	</section>
+
+	<script>
+		 var xhr = new XMLHttpRequest();
+xhr.open("GET", "properties.json", true);
+xhr.onreadystatechange = function() {
+  if (xhr.readyState == 4) {
+    // JSON.parse does not evaluate the attacker's scripts.
+    var resp = JSON.parse(xhr.responseText);
+	console.log(resp)
+  }
+}
+xhr.send();
+
+
+	
+	</script>
+
+</body>
+
+</html>
